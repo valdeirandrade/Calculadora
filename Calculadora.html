@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+<script>
+
+function soma(){
+var n1 = parseFloat(document.getElementById("num1").value)
+var n2 = parseFloat(document.getElementById("num2").value)
+let s = n1+n2
+resultado.innerText = s
+}
+
+function subtracao(){
+var n1 = parseFloat(document.getElementById("num1").value)
+var n2 = parseFloat(document.getElementById("num2").value)
+let sub = n1-n2
+resultado.innerText = sub
+}
+
+
+function multiplicacao(){
+var n1 = parseFloat(document.getElementById("num1").value)
+var n2 = parseFloat(document.getElementById("num2").value)
+let multi = n1*n2
+resultado.innerText = multi
+}
+
+
+function divisao(){
+var n1 = parseFloat(document.getElementById("num1").value)
+var n2 = parseFloat(document.getElementById("num2").value)
+let div = n1/n2
+resultado.innerText = div
+}
+
+</script>
+
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div>
+    <label>Número 1</label>
+    <input type="number" placeholder="número 1" id="num1">
+    </div>
+    <div>
+    <label>Número 2</label>
+    <input type="number" placeholder="número 2" id="num2">
+    </div>
+    <div>
+    <input onclick="soma()" type="button" value="+" id="soma">
+    <input onclick="subtracao()"type="button" value="-" id="sub">
+    <input onclick="multiplicacao()" type="button" value="x" id="mult">
+    <input onclick="divisao()"type="button" value="/" id="div">
+    </div>
+    <div id="resultado"></div>
+   
+</body>
+</html>
