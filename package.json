@@ -1,7 +1,12 @@
 {
   "name": "calculadora",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -15,10 +20,5 @@
   "bugs": {
     "url": "https://github.com/valdeirandrade/calculadora/issues"
   },
-  "homepage": "https://github.com/valdeirandrade/calculadora#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {},
-  "description": ""
+  "homepage": "https://github.com/valdeirandrade/calculadora#readme"
 }
